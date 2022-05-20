@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020326,2020351 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<style></style>
+<body>
+    <main>
+        <div id="loader-holder">
+            <div class="loader-spinner"></div>
+            <div>
+                <center><small>Please wait...</small></center>
+            </div>
+        </div>
+        <h1 id="app-title">Electricity Bill Calculator - 2020326,2020351 </h1>
+        <div id="form-holder">
+            <div id="main-box">
+                <form action="" id="calculate-units-form">
+                    <div class="form-item">
+                        <label for="units-amount"><b>Enter units Amount</b></label>
+                        <input type="number" step="any" min="0" name="units-amount" id="units-amount" placeholder="xxxxx" class="input-item text-right" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="vat-amount"><b>Enter VAT</b> <small>(%)</small></label>
+                        <input type="number" step="any" name="vat-amount" id="vat-amount" placeholder="x" class="input-item text-right" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="days-amount"><b>Billing Period (Days)</b></label>
+                        <input type="number" step="any" min="1" name="days-amount" id="days-amount" placeholder="x" class="input-item text-right" required>
+                    </div>
+                    <div class="form-item">
+                        <button class="btn-block" id="calculate-btn" type="submit">Calucate</button>
+                        <button class="btn-block" id="reset-btn" type="reset">Reset</button>
+                    </div>
+                </form>
+                <table id="result">
+                    <colgroup>
+                        <col width="50%">
+                        <col width="50%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td class=""><b>Units</b></td>
+                            <td class="text-right" id="units"></td>
+                        </tr>
+                        <tr>
+                            <td class=""><b>VAT Rate</b></td>
+                            <td class="text-right" id="vat-rate"></td>
+                        </tr>
+                        <tr>
+                            <td class=""><b>Billing Days</b></td>
+                            <td class="text-right" id="billing-days"></td>
+                        </tr>
+                        <tr>
+                            <td class=""><b>Amount of bill without VAT</b></td>
+                            <td class="text-right" id="bill-wo-vat"></td>
+                        </tr>
+                        <tr>
+                            <td class=""><b>Total VAT Cost</b></td>
+                            <td class="text-right" id="vat-cost"></td>
+                        </tr>
+                        <tr>
+                            <td class=""><b>Total bill including VAT</b></td>
+                            <td class="text-right" id="total-bill"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
